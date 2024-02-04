@@ -1,2 +1,3 @@
 
-https://www.youtube.com/watch?v=JfI5PISLr9w&list=PL4cUxeGkcC9gCtAuEdXTjNVE5bbMFo5OD&ab_channel=NetNinja
+1. https://www.youtube.com/watch?v=JfI5PISLr9w&list=PL4cUxeGkcC9gCtAuEdXTjNVE5bbMFo5OD&ab_channel=NetNinja -- Vue-TypeScript
+2. https://www.youtube.com/watch?v=2pZmKW9-I_k&list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI&index=2&ab_channel=NetNinja -- TypeScript
