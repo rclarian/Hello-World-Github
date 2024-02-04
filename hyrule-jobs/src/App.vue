@@ -1,42 +1,28 @@
 <template>
   <div class="app">
-    <!-- <p>{{ name }} - {{ age }}</p>
-    <button @click="changeName('Zelda')">change name</button>
-    <button @click="changeAge('30')">change age</button> -->
-
-    <p>{{ jobs[0].location }}</p>
+    <JobsList :jobs="jobs" />
+    
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent, reactive, ref, toRefs } from 'vue';
+import JobsList from './components/JobsList.vue';
 import Job from './types/Job'
+
 
 
 export default defineComponent({
   name: 'App',
-  components: {},
+  components: {JobsList},
   setup(){
-    // const state = reactive({
-    //   name: 'Link',
-    //   age: 25 as string | number
-    // })
-
-    // state.name = '999' //cannot change type
-    // state.age = 26
-
-    // return { ...toRefs(state) }
-    // const name = ref('Link')
-    // const age = ref<number | string>(100)
-
-    // return { name, age}
-
+    
     const jobs = ref<Job[]>([
-      { title: 'farm worker', location: 'lon lon ranch', salary: 30000, id: '1' },
-      { title: 'quarryman', location: 'death mountain', salary: 40000, id: '2' },
-      { title: 'flute player', location: 'the lost woods', salary: 35000, id: '3' },
-      { title: 'fisherman', location: 'lake hylia', salary: 21000, id: '4' },
-      { title: 'prison guard', location: 'gerudo valley', salary: 32000, id: '5' }
+      { title: 'Farm Worker', location: 'Lon Lon Ranch', salary: 30000, id: '1' },
+      { title: 'Quarryman', location: 'Death Mountain', salary: 40000, id: '2' },
+      { title: 'Flute Player', location: 'The Lost Woods', salary: 35000, id: '3' },
+      { title: 'Fisherman', location: 'Lake Hylia', salary: 21000, id: '4' },
+      { title: 'Prison Guard', location: 'Gerudo Valley', salary: 32000, id: '5' }
     ])
     return { jobs }
   },
